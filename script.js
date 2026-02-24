@@ -13,4 +13,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-console.log("Firebase berhasil connect!");
+document.getElementById("masukBtn").addEventListener("click", function () {
+  alert("Firebase berhasil connect & tombol jalan!");
+});
