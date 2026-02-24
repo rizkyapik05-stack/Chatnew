@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple 2-User Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+  <h2>Masuk Chat</h2>
+  <input type="text" id="userId" placeholder="Masukkan User ID">
+  <input type="text" id="roomId" placeholder="Masukkan Room ID">
+  <button onclick="joinChat()">Masuk</button>
+</div>
+
+<div class="chat-container" id="chatContainer" style="display:none;">
+  <h3 id="roomTitle"></h3>
+  <div id="chatBox"></div>
+  <div class="input-area">
+    <input type="text" id="messageInput" placeholder="Tulis pesan...">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
